@@ -1,128 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Control.INC® — Intelligent Systems, App Development, Digital Marketing, AI Monitoring & Website Management.">
-  <title>Control.INC® — Official Site</title>
-  <style>
-    :root {
-      --charcoal: #1C1C1E;
-      --red: #8B0000;
-      --white: #FFFAFA;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      background: var(--white);
-      color: var(--charcoal);
-      line-height: 1.6;
-    }
-    header {
-      text-align: center;
-      padding: 30px 0;
-      border-bottom: 3px solid var(--red);
-    }
-    header img { width: 200px; height: auto; }
-    nav {
-      background: var(--charcoal);
-      text-align: center;
-      padding: 12px 0;
-    }
-    nav a {
-      color: var(--white);
-      margin: 0 18px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-    nav a:hover { color: var(--red); }
-    main {
-      max-width: 950px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h1, h2 { color: var(--red); }
-    section { margin-bottom: 50px; }
-    p { margin: 15px 0; }
-    .cta a {
-      background: var(--red);
-      color: var(--white);
-      text-decoration: none;
-      padding: 10px 18px;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    .cta a:hover { background: #A30000; }
-    footer {
-      background: var(--charcoal);
-      color: var(--white);
-      text-align: center;
-      padding: 25px 10px;
-      font-size: 14px;
-    }
-  </style>
-</head>
-<body>
+<body style="background-color:#1C1C1E; color:#FFFAFA; font-family:'Helvetica Neue', Arial, sans-serif;">
+  
+  <!-- Startup Intro (Control.INC animation only) -->
+  <div id="startup-intro" style="display:flex;justify-content:center;align-items:center;height:100vh;background-color:#FFFAFA;">
+    <img src="Ci_logo.png" alt="Control.INC® Logo" style="width:120px;">
+  </div>
 
-<header>
-  <img src="control_inc_logo.png" alt="Control.INC® Logo">
-</header>
+  <!-- Main BenchLab Interface -->
+  <div id="main-content" style="display:none;">
+    <header style="text-align:center;padding:20px 0;">
+      <h1 style="color:#8B0000;">Vino Auto BenchLab</h1>
+      <p>Enter VIN to Begin Diagnostics</p>
+    </header>
 
-<nav>
-  <a href="#home">Home</a>
-  <a href="#systems">Systems</a>
-  <a href="#marketing">Digital Marketing</a>
-  <a href="#apps">App Development</a>
-  <a href="#monitoring">AI Monitoring</a>
-  <a href="#management">Web Management</a>
-  <a href="#contact">Contact</a>
-</nav>
+    <section id="vin-lookup" style="text-align:center;margin:20px;">
+      <input type="text" id="vinInput" placeholder="Enter VIN..." style="padding:10px;width:80%;max-width:300px;">
+      <button id="lookupBtn" style="background-color:#8B0000;color:#FFFAFA;padding:10px;border:none;">Lookup</button>
+    </section>
 
-<main>
-  <section id="home">
-    <h1>Welcome to Control.INC®</h1>
-    <p>Control.INC® is a global innovation company combining intelligent automotive systems, AI-powered analytics, and high-performance digital technology for the future of connected engineering and smart branding.</p>
-    <div class="cta">
-      <a href="https://vinoautobenchlabafrica.com" target="_blank">Explore BenchLab</a>
-    </div>
-  </section>
+    <section class="report-section" style="text-align:center;margin-top:40px;">
+      <h2>Unlock Professional VIN Report</h2>
+      <button id="unlockProBtn" style="background-color:#8B0000;color:#FFFAFA;padding:10px;border:none;">Unlock Pro</button>
+    </section>
 
-  <section id="systems">
-    <h2>Intelligent Systems</h2>
-    <p>We engineer next-generation automotive control, automation, and diagnostic systems — integrating precision electronics and AI-based response feedback.</p>
-  </section>
+    <section class="chat-section" style="margin-top:50px;text-align:center;">
+      <div class="chat-box" style="margin:auto;width:90%;max-width:400px;background:#2a2a2d;padding:15px;border-radius:8px;">
+        <div class="message support">Online Support: Hi there! How can I assist you today?</div>
+        <div class="message user">You: Hi, I need help with diagnostics.</div>
+      </div>
+      <div class="chat-controls" style="margin-top:10px;">
+        <button id="askBtn">Ask (Free)</button>
+        <button id="attachBtn">Attach</button>
+      </div>
+    </section>
 
-  <section id="marketing">
-    <h2>Digital Marketing</h2>
-    <p>From branding to campaign strategy, Control.INC® creates measurable impact with AI analytics, SEO optimization, and advanced brand control systems.</p>
-  </section>
+    <footer style="text-align:center;margin-top:60px;color:#999;">
+      <p>Powered by Vino Auto AI Diagnostics</p>
+    </footer>
+  </div>
 
-  <section id="apps">
-    <h2>App Development</h2>
-    <p>We design and build intelligent apps that bridge diagnostics, analytics, and customer engagement — focused on speed, reliability, and UI excellence.</p>
-  </section>
-
-  <section id="monitoring">
-    <h2>AI Monitoring & Analytics</h2>
-    <p>Our system monitoring platforms combine machine learning with predictive insights, giving real-time reports on hardware, software, and performance data.</p>
-  </section>
-
-  <section id="management">
-    <h2>Website Management</h2>
-    <p>Control.INC® delivers professional hosting, optimization, and full web lifecycle management — ensuring security, uptime, and seamless performance through cloud-based automation and analytics.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email us at <a href="mailto:support@control.inc">support@control.inc</a> for partnerships, support, or collaboration opportunities.</p>
-  </section>
-</main>
-
-<footer>
-  © 2025 Control.INC® — All Rights Reserved<br>
-  Theme: Charcoal Gray / Dark Red / Snow White
-</footer>
-
+  <script>
+    // Show startup logo for 3 seconds then fade to main site
+    window.onload = () => {
+      setTimeout(() => {
+        document.getElementById('startup-intro').style.display = 'none';
+        document.getElementById('main-content').style.display = 'block';
+      }, 3000);
+    };
+  </script>
 </body>
-</html>
