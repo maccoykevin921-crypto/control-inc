@@ -1,50 +1,26 @@
-<body style="background-color:#1C1C1E; color:#FFFAFA; font-family:'Helvetica Neue', Arial, sans-serif;">
-  
-  <!-- Startup Intro (Control.INC animation only) -->
-  <div id="startup-intro" style="display:flex;justify-content:center;align-items:center;height:100vh;background-color:#FFFAFA;">
-    <img src="Ci_logo.png" alt="Control.INC® Logo" style="width:120px;">
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VisionControlInc | Deep AI Immersion Frontend</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo">Control.INC® + Vision®</div>
+    <p class="tagline">Deep AI Immersion Interface</p>
 
-  <!-- Main BenchLab Interface -->
-  <div id="main-content" style="display:none;">
-    <header style="text-align:center;padding:20px 0;">
-      <h1 style="color:#8B0000;">Vino Auto BenchLab</h1>
-      <p>Enter VIN to Begin Diagnostics</p>
-    </header>
+    <div class="system-panel">
+      <div id="status" class="status">System Offline</div>
+      <button id="initialize" class="btn">Initialize System</button>
+    </div>
 
-    <section id="vin-lookup" style="text-align:center;margin:20px;">
-      <input type="text" id="vinInput" placeholder="Enter VIN..." style="padding:10px;width:80%;max-width:300px;">
-      <button id="lookupBtn" style="background-color:#8B0000;color:#FFFAFA;padding:10px;border:none;">Lookup</button>
-    </section>
-
-    <section class="report-section" style="text-align:center;margin-top:40px;">
-      <h2>Unlock Professional VIN Report</h2>
-      <button id="unlockProBtn" style="background-color:#8B0000;color:#FFFAFA;padding:10px;border:none;">Unlock Pro</button>
-    </section>
-
-    <section class="chat-section" style="margin-top:50px;text-align:center;">
-      <div class="chat-box" style="margin:auto;width:90%;max-width:400px;background:#2a2a2d;padding:15px;border-radius:8px;">
-        <div class="message support">Online Support: Hi there! How can I assist you today?</div>
-        <div class="message user">You: Hi, I need help with diagnostics.</div>
-      </div>
-      <div class="chat-controls" style="margin-top:10px;">
-        <button id="askBtn">Ask (Free)</button>
-        <button id="attachBtn">Attach</button>
-      </div>
-    </section>
-
-    <footer style="text-align:center;margin-top:60px;color:#999;">
-      <p>Powered by Vino Auto AI Diagnostics</p>
+    <footer>
+      <p>Powered by VisionControlInc Deep AI | © 2025 Control.INC®</p>
     </footer>
   </div>
 
-  <script>
-    // Show startup logo for 3 seconds then fade to main site
-    window.onload = () => {
-      setTimeout(() => {
-        document.getElementById('startup-intro').style.display = 'none';
-        document.getElementById('main-content').style.display = 'block';
-      }, 3000);
-    };
-  </script>
+  <script src="script.js"></script>
 </body>
+</html>
