@@ -1,0 +1,71 @@
+/* === VisionControlInc Deep AI Frontend === */
+/* Theme colors: Charcoal Gray, Dark Red, Snow White */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #1C1C1E;
+  color: #FFFAFA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 40px;
+  border: 1px solid #8B0000;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  box-shadow: 0 0 25px rgba(139, 0, 0, 0.5);
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #FFFAFA;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  font-size: 1.1em;
+  color: #A0A0A0;
+  margin-bottom: 25px;
+}
+
+.system-panel {
+  margin: 20px 0;
+}
+
+.status {
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: #FFFAFA;
+  transition: color 0.5s ease, text-shadow 0.5s ease;
+}
+
+.btn {
+  background-color: #8B0000;
+  color: #FFFAFA;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #A40000;
+  box-shadow: 0 0 15px rgba(139, 0, 0, 0.8);
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 0.8em;
+  color: #A0A0A0;
+  letter-spacing: 0.3px;
+}
